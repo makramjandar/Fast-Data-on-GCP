@@ -30,4 +30,4 @@ sudo pkill -SIGHUP dockerd
 # https://medium.com/@sh.tsang/docker-tutorial-5-nvidia-docker-2-0-installation-in-ubuntu-18-04-cb80f17cac65
 
 # One-line install
-# wget -O - -q 'https://gist.githubusercontent.com/makramjandar/c5c390e0ed43f7b3760505f9d0da7716/raw/55c674c221a6d4856f796ea9d691841f6bccad2c/install-nvidia-docker-2.sh' | bash
+# wget -O - -q 'https://github.com/makramjandar/Fast-Data-on-GCP/blob/master/utils/install-nvidia-docker2.sh' | bash
