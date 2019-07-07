@@ -24,12 +24,13 @@ echo "--- install zsh-plugins ---"
 sed -i -e "s/plugins=(.*)/plugins=(git pip vi-mode dirhistory docker extract history command-not-found common-aliases zsh-autosuggestions zsh-syntax-highlighting)/g" .zshrc
 echo "--- end install ---"
 
-echo "--- install powerlevel10k ---"
-yes Y | git clone https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
-echo "--- end install ---"
 
 echo "--- install purepower ---"
 cd && curl -fsSLO https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.purepower
+echo "--- end install ---"
+
+echo "--- install powerlevel10k ---"
+yes Y | git clone https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo "--- end install ---"
 
 echo "--- source powerlevel10k ---"
