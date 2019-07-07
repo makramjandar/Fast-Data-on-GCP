@@ -6,6 +6,10 @@ echo "--- start update ---"
 sudo apt-get update
 echo "--- end update ---"
 
+echo "--- apt install zsh ---"
+sudo apt-get install zsh
+echo "--- end apt install ---"
+
 echo "--- install oh-my-zsh ---"
 yes Y | sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 echo "--- end install ---"
