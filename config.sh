@@ -46,14 +46,19 @@ echo "--- source gcp buckets ---"
 sed -i -e "\$asource ~/.bash_mount_gcp_buckets" ~/.zshrc
 echo "--- end install ---"
 
+echo "--- source .bash_profile ---"
+#echo 'source ~/.purepower' >>! ~/.zshrc
+sed -i -e "\$asource ~/.bash_profile" ~/.bashrc
+echo "--- end install ---"
+
 #echo "--- source zshrc ---"
 #echo 'source ~/.zshrc' >>! ~/.zshrc
 #source ~/.zshrc
 #echo "--- end install ---"
 
-echo "--- set zsh default ---"
-sudo chsh -s $(which zsh)
-echo "--- done ---"
+#echo "--- set zsh default ---"
+#sudo chsh -s $(which zsh)
+#echo "--- done ---"
 
 echo "--- refresh zsh ---"
 exec zsh -l
