@@ -52,7 +52,7 @@ echo "--- end install ---"
 #echo "--- end install ---"
 
 echo "--- set zsh default ---"
-chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
 echo "--- done ---"
 
 echo "--- refresh zsh ---"
