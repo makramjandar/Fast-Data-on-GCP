@@ -18,6 +18,6 @@ echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
 echo "--- end install ---"
 
 echo "--- install purepower ---"
-cd && curl -fsSLO https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.purepowersudo mv PowerlineSymbols.otf /usr/share/fonts/
+cd && curl -fsSLO https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.purepower
 echo 'source ~/.purepower' >>! ~/.zshrc
 echo "--- end install powerline font ---"
