@@ -34,13 +34,21 @@ yes Y | git clone https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo "--- end install ---"
 
 echo "--- source powerlevel10k ---"
-echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc && exec zsh -l
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
 echo "--- end install ---"
 
 echo "--- source purepower ---"
-echo 'source ~/.purepower' >>! ~/.zshrc && exec zsh -l
+echo 'source ~/.purepower' >>! ~/.zshrc
+echo "--- end install ---"
+
+echo "--- source zhsrc ---"
+echo 'source ~/.zhsrc' >>! ~/.zshrc
 echo "--- end install ---"
 
 echo "--- set zsh default ---"
-chsh -s $(which zsh) && exec zsh -l
+chsh -s $(which zsh)
+echo "--- done ---"
+
+echo "--- refresh zsh ---"
+exec zsh -l
 echo "--- done ---"
