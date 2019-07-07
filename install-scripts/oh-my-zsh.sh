@@ -156,16 +156,16 @@ setup_shell() {
 		return
 	fi
 
-	echo "${BLUE}Time to change your default shell to zsh:${RESET}"
+	# echo "${BLUE}Time to change your default shell to zsh:${RESET}"
 
 	# Prompt for user choice on changing the default login shell
-	printf "${YELLOW}Do you want to change your default shell to zsh? [Y/n]${RESET} "
-	read opt
-	case $opt in
-		y*|Y*|"") echo "Changing the shell..." ;;
-		n*|N*) echo "Shell change skipped."; return ;;
-		*) echo "Invalid choice. Shell change skipped."; return ;;
-	esac
+	#printf "${YELLOW}Do you want to change your default shell to zsh? [Y/n]${RESET} "
+	#read opt
+	#case $opt in
+	y*|Y*|"") echo "Changing the shell..." ;;
+	#	n*|N*) echo "Shell change skipped."; return ;;
+	#	*) echo "Invalid choice. Shell change skipped."; return ;;
+	#esac
 
 	# Test for the right location of the "shells" file
 	if [ -f /etc/shells ]; then
