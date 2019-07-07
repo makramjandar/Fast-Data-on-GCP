@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# config oh-my-zsh, powerlevel10k, purepower
+# install and config {zsh, oh-my-zsh, powerlevel10k, purepower}
 
 echo "--- start update ---"
 sudo apt-get update
