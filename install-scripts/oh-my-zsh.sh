@@ -33,3 +33,11 @@ echo "--- install purepower ---"
 cd && curl -fsSLO https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.purepower \
 echo 'source ~/.purepower' >>! ~/.zshrc
 echo "--- end install ---"
+
+echo "--- set zsh default ---"
+chsh -s $(which zsh)
+echo "--- done ---"
+
+echo "--- exec zsh ---"
+exec zsh
+echo "--- done ---"
