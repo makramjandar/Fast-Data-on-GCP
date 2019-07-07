@@ -2,9 +2,9 @@
 
 # install and config {zsh, oh-my-zsh, powerlevel10k, purepower}
 
-echo "--- start update ---"
-sudo apt-get update
-echo "--- end update ---"
+#echo "--- start update ---"
+#sudo apt-get update
+#echo "--- end update ---"
 
 echo "--- apt install zsh ---"
 sudo apt-get install zsh
@@ -28,7 +28,7 @@ echo "--- end install ---"
 
 
 echo "--- install purepower ---"
-cd && curl -fsSLO https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.purepower
+curl -fsSLO https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.purepower
 echo "--- end install ---"
 
 echo "--- install powerlevel10k ---"
