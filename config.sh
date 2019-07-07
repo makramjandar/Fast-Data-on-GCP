@@ -1,12 +1,10 @@
-#zsh, tmux, oh-my-zsh, powerlevel10k, purepower
+#!/bin/sh
+
+# config oh-my-zsh, powerlevel10k, purepower
 
 echo "--- start update ---"
 sudo apt-get update
 echo "--- end update ---"
-
-echo "--- apt install zsh tmux---"
-sudo yes Y | apt-get install zsh tmux
-echo "--- end apt install ---"
 
 echo "--- install oh-my-zsh ---"
 yes Y | sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
@@ -43,10 +41,15 @@ echo "--- source purepower ---"
 sed -i -e "\$asource ~/.purepower" ~/.zshrc
 echo "--- end install ---"
 
-echo "--- source zhsrc ---"
-#echo 'source ~/.zhsrc' >>! ~/.zshrc
-source ~/.zhsrc
+echo "--- source gcp buckets ---"
+#echo 'source ~/.purepower' >>! ~/.zshrc
+sed -i -e "\$asource ~/.bash_mount_gcp_buckets" ~/.zshrc
 echo "--- end install ---"
+
+#echo "--- source zshrc ---"
+#echo 'source ~/.zshrc' >>! ~/.zshrc
+#source ~/.zshrc
+#echo "--- end install ---"
 
 echo "--- set zsh default ---"
 chsh -s $(which zsh)
