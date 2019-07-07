@@ -25,21 +25,20 @@ sed -i -e "s/plugins=(.*)/plugins=(git pip vi-mode dirhistory docker extract his
 echo "--- end install ---"
 
 echo "--- install powerlevel10k ---"
-yes Y | git clone https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k && echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
+yes Y | git clone https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
 echo "--- end install ---"
 
 echo "--- install purepower ---"
-cd && curl -fsSLO https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.purepower && echo 'source ~/.purepower' >>! ~/.zshrc
+cd && curl -fsSLO https://raw.githubusercontent.com/romkatv/dotfiles-public/master/.purepower
 echo "--- end install ---"
+
+echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
+echo 'source ~/.purepower' >>! ~/.zshrc
 
 echo "--- set zsh default ---"
 chsh -s $(which zsh)
 echo "--- done ---"
 
-echo "--- exec bash ---"
-exec bash
-echo "--- done ---"
-
 echo "--- exec zsh ---"
-exec zsh
+exec exec zsh -l
 echo "--- done ---"
