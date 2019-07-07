@@ -64,6 +64,10 @@ echo "--- end install ---"
 #sudo chsh -s $(which zsh)
 #echo "--- done ---"
 
+#echo "--- refresh zsh ---"
+#exec zsh -l
+#echo "--- done ---"
+
 echo "--- refresh zsh ---"
-exec zsh -l
+source .bashrc
 echo "--- done ---"
