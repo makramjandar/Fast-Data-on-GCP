@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # config oh-my-zsh, powerlevel10k, purepower
 
