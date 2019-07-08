@@ -7,7 +7,7 @@
 #echo "--- end update ---"
 
 echo "--- apt install zsh ---"
-sudo apt-get install zsh
+apt-get install zsh
 echo "--- end apt install ---"
 
 echo "--- install oh-my-zsh ---"
