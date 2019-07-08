@@ -24,10 +24,10 @@ sudo apt-get update
 sudo apt-get install nvidia-docker2 && \
 sudo pkill -SIGHUP dockerd
 
-# References
+# Refs:
 # https://nvidia.github.io/nvidia-docker/
 # https://github.com/NVIDIA/nvidia-docker/wiki/Installation-(version-2.0)
 # https://medium.com/@sh.tsang/docker-tutorial-5-nvidia-docker-2-0-installation-in-ubuntu-18-04-cb80f17cac65
 
-# One-line install
-# wget -O - -q 'https://github.com/makramjandar/Fast-Data-on-GCP/blob/master/utils/install-nvidia-docker2.sh' | bash
+# One-line install:
+# wget -O - -q 'https://raw.githubusercontent.com/makramjandar/Fast-Data-on-GCP/master/utils/install-nvidia-docker2.sh' | bash
