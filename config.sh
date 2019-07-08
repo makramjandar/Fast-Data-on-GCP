@@ -68,6 +68,6 @@ echo "--- end install ---"
 #exec zsh -l
 #echo "--- done ---"
 
-echo "--- refresh zsh ---"
-source .bashrc
-echo "--- done ---"
+#echo "--- refresh zsh ---"
+#source .bashrc
+#echo "--- done ---"
