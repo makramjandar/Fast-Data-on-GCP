@@ -19,4 +19,4 @@ gcloud config list
 # https://cloud.google.com/sdk/docs/downloads-apt-get
 
 # One-line install
-# wget -O - -q 'https://github.com/makramjandar/Fast-Data-on-GCP/blob/master/utils/install-gcloud-sdk.sh' | bash
+# wget -O - -q 'https://raw.githubusercontent.com/makramjandar/Fast-Data-on-GCP/master/utils/install-gcloud-sdk.sh' | bash
