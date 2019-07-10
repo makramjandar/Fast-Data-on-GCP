@@ -1,13 +1,10 @@
 #!/bin/bash
 
-#  @uthor and collected by Makram Jandar
-#  |    \|  |  |    |   \ |    |/    |     |   \  /   \   /  |  |/ ] /  _|    \
-#  |  _  |  |  ||  ||    \ |  ||  o  |_____|    \|     | /  /|  ' / /  [_|  D  )
-#  |  |  |  |  ||  ||  D  ||  ||     |     |  D  |  O  |/  / |    \|    _|    /
-#  |  |  |  :  ||  ||     ||  ||  _  |_____|     |     /   \_|     |   [_|    \
-#  |  |  |\   / |  ||     ||  ||  |  |     |     |     \     |  .  |     |  .  \
-#  |__|__| \_/ |____|_____|____|__|__|     |_____|\___/ \____|__|\_|_____|__|\_|
-#                                                    © Install nvidia-docker 2.0
+#  @uthor and collected by Makram Jandar  _    _    _    _    _     _  
+#    / \  / \  / \  / \  / \  / \   / \  / \  / \  / \  / \  / \   / \ 
+#   ( N )( V )( I )( D )( I )( A ) ( D )( O )( C )( K )( E )( R ) ( 2 )
+#    \_/  \_/  \_/  \_/  \_/  \_/   \_/  \_/  \_/  \_/  \_/  \_/   \_/ 
+#                                           © Install nvidia-docker 2.0
 
 # Set the repo and update using Ubuntu 18.04, so I follow the Debian settings:
 curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
