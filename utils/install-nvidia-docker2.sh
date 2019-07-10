@@ -1,25 +1,25 @@
 #!/bin/bash
 
-#  @uthor and collected by Makram Jandar  _    _    _    _    _     _  
-#    / \  / \  / \  / \  / \  / \   / \  / \  / \  / \  / \  / \   / \ 
+#  @uthor and collected by Makram Jandar  _    _    _    _    _     _
+#    / \  / \  / \  / \  / \  / \   / \  / \  / \  / \  / \  / \   / \
 #   ( N )( V )( I )( D )( I )( A ) ( D )( O )( C )( K )( E )( R ) ( 2 )
-#    \_/  \_/  \_/  \_/  \_/  \_/   \_/  \_/  \_/  \_/  \_/  \_/   \_/ 
+#    \_/  \_/  \_/  \_/  \_/  \_/   \_/  \_/  \_/  \_/  \_/  \_/   \_/
 #                                           © Install nvidia-docker 2.0
 
 # Set the repo and update using Ubuntu 18.04, so I follow the Debian settings:
-curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey | \
-sudo apt-key add -
+curl -s -L https://nvidia.github.io/nvidia-docker/gpgkey \
+  | sudo apt-key add -
 dist=$(
   . /etc/os-release
   echo "$ID""$VERSION_ID"
 )
-curl -s -L https://nvidia.github.io/nvidia-docker/"$dist"/nvidia-docker.list | \
-sudo tee /etc/apt/sources.list.d/nvidia-docker.list
+curl -s -L https://nvidia.github.io/nvidia-docker/"$dist"/nvidia-docker.list \
+  | sudo tee /etc/apt/sources.list.d/nvidia-docker.list
 sudo apt-get update
 
 # Install nvidia-docker 2.0 according to the guideline.
-sudo apt-get install nvidia-docker2 && \
-sudo pkill -SIGHUP dockerd
+sudo apt-get install nvidia-docker2 \
+  && sudo pkill -SIGHUP dockerd
 
 # Refs:
 # https://nvidia.github.io/nvidia-docker/
