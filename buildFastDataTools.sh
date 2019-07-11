@@ -17,7 +17,7 @@ eval "$(ssh-agent)" && \
 #    \_/  \_/  \_/  \_/  \_/  \_/  \_/  \_/  \_/  \_/
 #                       © Add SSHkey >> GitHub account
 echo "Copy/Paste output into https://github.com/settings/ssh/new" && \
-cat "$HOME"/.ssh/google_compute_engine.pub && \
+sudo cat "$HOME"/.ssh/google_compute_engine.pub && \
 sleep 30 && \
 
 #    / \  / \  / \   / \  / \  / \  / \  / \  / \  / \
@@ -26,7 +26,7 @@ sleep 30 && \
 #                                   © Mount GCP Buckets
 mv "$PWD"/app/delivery/bash_mount_gcp_buckets "$HOME"/.bash_mount_gcp_buckets && \
 . "$HOME"/.bash_mount_gcp_buckets && \
-. "$HOME"/.bashrc && \
+#. "$HOME"/.bashrc && \
 
 #    / \  / \   / \
 #   ( O )( K ) ( 👌 )
