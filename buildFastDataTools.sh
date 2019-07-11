@@ -5,9 +5,10 @@
 #   ( A )( D )( D ) ( S )( S )( H ) ( K )( E )( Y )( S )
 #    \_/  \_/  \_/   \_/  \_/  \_/   \_/  \_/  \_/  \_/
 #                           © Copy SSHkeys >> $HOME/.ssh
+sudo mkdir -p "$HOME"/.ssh && \
 sudo chmod -R 755 "$PWD"/app/ansible/sshkeys/ && \
 sudo chmod -R 755 "$HOME"/.ssh/ && \
-cp -r -a "$PWD"/app/ansible/sshkeys/google_compute_engine* "$HOME"/.ssh/ && \
+sudo cp -r -a "$PWD"/app/ansible/sshkeys/google_compute_engine* "$HOME"/.ssh/ && \
 sudo chmod -R 400 "$HOME"/.ssh/ && \
 sudo rm -rf "$PWD"/app/ansible/sshkeys/ && \
 eval "$(ssh-agent)" && \
@@ -15,7 +16,7 @@ eval "$(ssh-agent)" && \
 #    / \  / \  / \  / \  / \  / \  / \  / \  / \  / \
 #   ( C )( O )( N )( F )( I )( G )( * )( G )( I )( T )
 #    \_/  \_/  \_/  \_/  \_/  \_/  \_/  \_/  \_/  \_/
-#                       © Add SSHkey >> GitHub account
+#                        © Add SSHkey > GitHub account
 echo "Copy/Paste output into https://github.com/settings/ssh/new" && \
 sudo cat "$HOME"/.ssh/google_compute_engine.pub && \
 sleep 30 && \
