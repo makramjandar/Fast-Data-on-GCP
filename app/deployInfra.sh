@@ -48,7 +48,7 @@ gcsfuse --implicit-dirs --dir-mode "777" -o nonempty ${GCLOUD_PROJECT}-code ~/bu
 gcsfuse --implicit-dirs --dir-mode "777" -o nonempty ${GCLOUD_PROJECT}-data ~/buckets/${GCLOUD_PROJECT}/data                                                              
 EOF
 
-#    / \  / \  / \  / \  / \  / \  / \\
+#    / \  / \  / \  / \  / \  / \  / \
 #   ( A )( N )( S )( I )( B )( L )( E )
 #    \_/  \_/  \_/  \_/  \_/  \_/  \_/
 cd /root/app/ansible
