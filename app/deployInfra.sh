@@ -48,6 +48,15 @@ gcsfuse --implicit-dirs --dir-mode "777" -o nonempty ${GCLOUD_PROJECT}-code ~/bu
 gcsfuse --implicit-dirs --dir-mode "777" -o nonempty ${GCLOUD_PROJECT}-data ~/buckets/${GCLOUD_PROJECT}/data                                                              
 EOF
 
+#    / \  / \  / \  / \   / \  / \  / \  / \  / \  / \  / \
+#   ( B )( A )( S )( H ) ( P )( R )( O )( F )( I )( L )( E )
+#    \_/  \_/  \_/  \_/   \_/  \_/  \_/  \_/  \_/  \_/  \_/
+
+cat >bash_profile <<EOF
+export SHELL=/bin/zsh
+exec /bin/zsh -l                                                              
+EOF
+
 #    / \  / \  / \  / \  / \  / \  / \
 #   ( A )( N )( S )( I )( B )( L )( E )
 #    \_/  \_/  \_/  \_/  \_/  \_/  \_/
