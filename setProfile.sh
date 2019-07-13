@@ -1,6 +1,6 @@
 #!/bin/sh
 
-#  @uthor and collected by Makram Jandar  _    _    _
+#  @uthor and collected with ❤️ by Makram Jandar    _
 #    / \  / \  / \   / \  / \  / \  / \  / \  / \  / \
 #   ( S )( E )( T ) ( P )( R )( O )( F )( I )( L )( E )
 #    \_/  \_/  \_/   \_/  \_/  \_/  \_/  \_/  \_/  \_/
@@ -12,7 +12,7 @@ read -p "Enter Your Project Id: " PROJECTID
 cat >profile <<EOF
 #!/bin/bash
 
-#  @uthor & collected by Makram Jandar
+#  @uthor and collected with ❤️ by Makram Jandar
 #   / \  / \  / \  / \  / \  / \  / \\
 #  ( P )( R )( O )( F )( I )( L )( E )
 #   \_/  \_/  \_/  \_/  \_/  \_/  \_/
