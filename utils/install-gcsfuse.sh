@@ -1,10 +1,10 @@
 #!/bin/bash
 
-# @uthor and collected by Makram Jandar
-#    / \  / \  / \  / \  / \  / \  / \
-#   ( G )( C )( S )( F )( U )( S )( E )
-#    \_/  \_/  \_/  \_/  \_/  \_/  \_/
-#                     © Install GCSFuse
+# @uthor and collected with ❤️ by Makram Jandar
+#             / \  / \  / \  / \  / \  / \  / \
+#            ( G )( C )( S )( F )( U )( S )( E )
+#             \_/  \_/  \_/  \_/  \_/  \_/  \_/
+#                             © Install GCSFuse
 
 sudo apt-get install curl && \
 sudo apt-get update && \
