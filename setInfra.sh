@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# @uthor and collected by Makram Jandar    _    _    _
+# @uthor and collected with ❤️ by Makram Jandar _    _ 
 #    / \  / \  / \   / \  / \  / \   / \  / \  / \  / \
 #   ( A )( D )( D ) ( S )( S )( H ) ( K )( E )( Y )( S )
 #    \_/  \_/  \_/   \_/  \_/  \_/   \_/  \_/  \_/  \_/
