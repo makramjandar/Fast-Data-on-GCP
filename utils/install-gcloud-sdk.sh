@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# @uthor and collected by Makram Jandar  _    _    _
+# @uthor and collected with ❤️ by Makram Jandar    _
 #    / \  / \  / \  / \  / \  / \  / \  / \  / \  / \
 #   ( G )( C )( L )( O )( U )( D )( - )( S )( D )( K )
 #    \_/  \_/  \_/  \_/  \_/  \_/  \_/  \_/  \_/  \_/
