@@ -6,18 +6,16 @@
 #             \_/  \_/  \_/  \_/  \_/  \_/  \_/
 #                             © Install GCSFuse
 
-sudo apt-get install curl && \
-sudo apt-get update && \
-export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)" && \
-echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee -a /etc/apt/sources.list.d/google-cloud-sdk.list && \
-sudo curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add - && \
-sudo apt-get update && sudo apt-get install google-cloud-sdk && \
-gcloud init --console-only && \
-gcloud config list
+# Add the gcsfuse distribution URL as a package source and import its public key:
+export GCSFUSE_REPO=gcsfuse-`lsb_release -c -s` && \
+echo "deb http://packages.cloud.google.com/apt $GCSFUSE_REPO main" | sudo tee /etc/apt/sources.list.d/gcsfuse.list && \
+curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add - && \
+# Update the list of packages available and install gcsfuse.
+sudo apt-get update -y && \
+sudo apt-get install gcsfuse -y 
 
 # References
-# https://cloud.google.com/sdk/docs/downloads-apt-get
-# https://github.com/GoogleCloudPlatform/gcsfuse
+# https://github.com/GoogleCloudPlatform/gcsfuse/blob/master/docs/installing.md
 
 # One-line install
 # wget -O - -q 'https://raw.githubusercontent.com/makramjandar/Fast-Data-on-GCP/master/utils/gcsfuse.sh' | bash
