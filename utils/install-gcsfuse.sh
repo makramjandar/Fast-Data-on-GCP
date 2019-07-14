@@ -18,4 +18,4 @@ sudo apt-get install gcsfuse -y
 # https://github.com/GoogleCloudPlatform/gcsfuse/blob/master/docs/installing.md
 
 # One-line install
-# wget -O - -q 'https://raw.githubusercontent.com/makramjandar/Fast-Data-on-GCP/master/utils/gcsfuse.sh' | bash
+# wget -O - -q 'https://raw.githubusercontent.com/makramjandar/Fast-Data-on-GCP/master/utils/install-gcsfuse.sh' | bash
