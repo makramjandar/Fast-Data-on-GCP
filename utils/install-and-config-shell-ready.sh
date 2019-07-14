@@ -55,31 +55,32 @@ echo "--- end install ---"
 #    \_/  \_/  \_/  \_/  \_/  \_/  \_/  \_/
 
 echo "--- source powerlevel10k ---"
-#echo 'source ~/powerlevel10k/powerlevel10k.zsh-theme' >>! ~/.zshrc
 sed -i -e '$asource ~/powerlevel10k/powerlevel10k.zsh-theme' ~/.zshrc
 echo "--- end install ---"
 
 echo "--- source purepower ---"
-#echo 'source ~/.purepower' >>! ~/.zshrc
 sed -i -e '$asource ~/.purepower' ~/.zshrc
 echo "--- end install ---"
 
 echo "--- source GCP Buckets ---"
-#echo 'source ~/.purepower' >>! ~/.zshrc
 sed -i -e '$asource ~/.bash_mount_gcp_buckets' ~/.zshrc
 echo "--- end install ---"
 
+echo "--- source ssh find agent ---"
+sed -i -e '$asource ~/.bash_ssh_find_agent' ~/.zshrc
+echo "--- end install ---"
+
 echo "--- source .bash_profile ---"
-#echo 'source ~/.purepower' >>! ~/.zshrc
 sed -i -e '$asource ~/.bash_profile' ~/.bashrc
 echo "--- end install ---"
 
-# References
+# FYI
 # https://github.com/robbyrussell/oh-my-zsh
 # https://github.com/zsh-users/zsh-autosuggestions
 # https://github.com/zsh-users/zsh-syntax-highlighting
 # https://github.com/romkatv/powerlevel10k
 # https://cloud.google.com/storage/docs/gcs-fuse
+# https://github.com/wwalker/ssh-find-agent
 
-# One-line install
+# 1 line install
 # wget -O - -q 'https://raw.githubusercontent.com/makramjandar/Fast-Data-on-GCP/master/utils/install-and-config-shell-ready.sh' | bash
