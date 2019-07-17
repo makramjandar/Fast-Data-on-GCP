@@ -66,8 +66,9 @@ echo "--- source GCP Buckets ---"
 sed -i -e '$asource ~/.bash_mount_gcp_buckets' ~/.zshrc
 echo "--- end install ---"
 
-echo "--- source ssh find agent ---"
-sed -i -e '$asource ~/.bash_ssh_find_agent' ~/.zshrc
+echo "--- source keychain ---"
+KEYCHAINLINE='/usr/bin/keychain ~/.ssh/gce && . ~/.keychain/\$HOSTNAME-sh'
+grep -qxF "$KEYCHAINLINE" ~/.zshrc || echo "$KEYCHAINLINE" >> ~/.zshrc
 echo "--- end install ---"
 
 echo "--- source .bash_profile ---"
@@ -81,6 +82,7 @@ echo "--- end install ---"
 # https://github.com/romkatv/powerlevel10k
 # https://cloud.google.com/storage/docs/gcs-fuse
 # https://github.com/wwalker/ssh-find-agent
+# https://www.cyberciti.biz/faq/ubuntu-debian-linux-server-install-keychain-apt-get-command/
 
 # 1 line install
 # wget -O - -q 'https://raw.githubusercontent.com/makramjandar/Fast-Data-on-GCP/master/utils/install-and-config-shell-ready.sh' | bash
