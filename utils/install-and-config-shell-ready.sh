@@ -31,8 +31,12 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 echo "--- end install ---"
 
 echo "--- install zsh-plugins ---"
-sed -i -e "s/plugins=(.*)/plugins=(git pip vi-mode dirhistory docker extract history command-not-found common-aliases zsh-autosuggestions zsh-syntax-highlighting)/g" .zshrc
+sed -i -e "s/plugins=(.*)/plugins=(keychain gpg-agent git pip vi-mode dirhistory docker extract history command-not-found common-aliases zsh-autosuggestions zsh-syntax-highlighting)/g" .zshrc
 echo "--- end install ---"
+
+echo "--- setup keychain plugin for loading multiples identities ---"
+sed -i '/^source $ZSH.*/i zstyle :omz:plugins:keychain identities gce' .zshrc
+echo "--- end setup ---"
 
 #    / \  / \  / \  / \   / \  / \  / \  / \  / \
 #   ( P )( U )( R )( E ) ( P )( O )( W )( E )( R )
@@ -66,11 +70,6 @@ echo "--- source GCP Buckets ---"
 sed -i -e '$asource ~/.bash_mount_gcp_buckets' ~/.zshrc
 echo "--- end install ---"
 
-echo "--- source keychain ---"
-KEYCHAINLINE='/usr/bin/keychain ~/.ssh/gce && . ~/.keychain/\$HOSTNAME-sh'
-grep -qxF "$KEYCHAINLINE" ~/.zshrc || echo "$KEYCHAINLINE" >> ~/.zshrc
-echo "--- end install ---"
-
 echo "--- source .bash_profile ---"
 sed -i -e '$asource ~/.bash_profile' ~/.bashrc
 echo "--- end install ---"
@@ -81,8 +80,7 @@ echo "--- end install ---"
 # https://github.com/zsh-users/zsh-syntax-highlighting
 # https://github.com/romkatv/powerlevel10k
 # https://cloud.google.com/storage/docs/gcs-fuse
-# https://github.com/wwalker/ssh-find-agent
-# https://www.cyberciti.biz/faq/ubuntu-debian-linux-server-install-keychain-apt-get-command/
+# https://github.com/robbyrussell/oh-my-zsh/tree/master/plugins/keychain
 
 # 1 line install
 # wget -O - -q 'https://raw.githubusercontent.com/makramjandar/Fast-Data-on-GCP/master/utils/install-and-config-shell-ready.sh' | bash
