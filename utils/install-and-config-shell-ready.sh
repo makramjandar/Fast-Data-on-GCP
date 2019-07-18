@@ -36,7 +36,12 @@ echo "--- end install ---"
 
 echo "--- setup keychain plugin for loading multiples identities ---"
 sed -i '/^source $ZSH.*/i zstyle :omz:plugins:keychain identities gce' .zshrc
+sed -i '/^zstyle :omz:plugins:keychain identities.*/i zstyle :omz:plugins:keychain agents gpg,ssh' .zshrc
 echo "--- end setup ---"
+
+
+
+
 
 #    / \  / \  / \  / \   / \  / \  / \  / \  / \
 #   ( P )( U )( R )( E ) ( P )( O )( W )( E )( R )
